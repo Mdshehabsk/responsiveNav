@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nav</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="/">
+                        responsive navbar
+                    </a>
+                </div>
+                
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">login</a></li>
+                </ul>
+                <div class="hamburger-menu">
+                    <a class="hamburger">
+                        <i class='bx bx-menu'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+            <div class="main">
+                <img src="image.jpg" alt="">
+            </div>
+    </main>
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const ul = document.querySelector('ul')
+        hamburger.addEventListener('click', ()=>{
+            ul.classList.toggle('block-and-none')
+        })
+    </script>
+</body>
+</html>
